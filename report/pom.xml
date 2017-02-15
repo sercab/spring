@@ -8,7 +8,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<spring.version>4.3.5.RELEASE</spring.version>
-		<thymeleaf.version>3.0.0.ALPHA03</thymeleaf.version>
+		<thymeleaf.version>3.0.3.RELEASE</thymeleaf.version>
 	</properties>
 	
 	<dependencies>
