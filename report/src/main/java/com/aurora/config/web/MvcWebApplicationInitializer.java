@@ -1,9 +1,12 @@
-package com.aurora.config;
+package com.aurora.config.web;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+import com.aurora.config.data.DataConfig;
+import com.aurora.listeners.ListenersConfig;
 
 public class MvcWebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
 
@@ -25,7 +28,7 @@ public class MvcWebApplicationInitializer extends AbstractAnnotationConfigDispat
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
-		return new Class[] { WebConfig.class };
+		return new Class[] { WebConfig.class, DataConfig.class, ListenersConfig.class };
 	}
 
 	@Override
